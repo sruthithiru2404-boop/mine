@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            My Restaurant
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="orders.html">Orders</a>
+            <a href="menu.html">Menu</a>
+            <a href="customers.html" class="active">Customers</a>
+            <a href="reports.html">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+            <div>
+                <h1>Customers</h1>
+                <p>Manage your restaurant customers</p>
+            </div>
+
+            <div class="profile">
+                Admin
+            </div>
+        </header>
+
+        <!-- Customers Table -->
+        <section class="recent-orders">
+
+            <h2>Customer List</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Total Orders</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#C001</td>
+                        <td>Arun</td>
+                        <td>9876543210</td>
+                        <td>arun@gmail.com</td>
+                        <td>12</td>
+                    </tr>
+
+                    <tr>
+                        <td>#C002</td>
+                        <td>Priya</td>
+                        <td>9876543211</td>
+                        <td>priya@gmail.com</td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>#C003</td>
+                        <td>Rahul</td>
+                        <td>9876543212</td>
+                        <td>rahul@gmail.com</td>
+                        <td>15</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script>
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>

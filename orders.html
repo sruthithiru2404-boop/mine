@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            My Restaurant
+        </div>
+
+      <nav> 
+    <a href="dashboard.html">Dashboard</a> 
+    <a href="orders.html" class="active">Orders</a> 
+    <a href="menu.html">Menu</a> 
+    <a href="customer.html">Customers</a> 
+    <a href="reports.html">Reports</a> 
+    <a href="#">Settings</a> 
+</nav>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Orders</h1>
+                <p>Manage restaurant orders</p>
+            </div>
+
+            <div class="profile">
+                Admin
+            </div>
+
+        </header>
+
+
+        <!-- Orders Table -->
+        <section class="recent-orders">
+
+            <h2>All Orders</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#1001</td>
+                        <td>Arun</td>
+                        <td>Chicken Biryani</td>
+                        <td>₹250</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1002</td>
+                        <td>Priya</td>
+                        <td>Paneer Rice</td>
+                        <td>₹200</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1003</td>
+                        <td>Rahul</td>
+                        <td>Pizza</td>
+                        <td>₹350</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>#1004</td>
+                        <td>Divya</td>
+                        <td>Veg Meals</td>
+                        <td>₹180</td>
+                        <td>Pending</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+
+</html>

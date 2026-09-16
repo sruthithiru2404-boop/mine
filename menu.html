@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            My Restaurant
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="orders.html">Orders</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="customer.html">Customers</a>
+            <a href="reports.html">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Menu</h1>
+                <p>Manage restaurant menu items</p>
+            </div>
+
+            <div class="profile">
+                Admin
+            </div>
+
+        </header>
+
+
+        <!-- Menu Items -->
+        <section class="recent-orders">
+
+            <h2>Menu Items</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#M001</td>
+                        <td>Chicken Biryani</td>
+                        <td>Main Course</td>
+                        <td>₹250</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>#M002</td>
+                        <td>Paneer Rice</td>
+                        <td>Main Course</td>
+                        <td>₹200</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>#M003</td>
+                        <td>Pizza</td>
+                        <td>Fast Food</td>
+                        <td>₹350</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>#M004</td>
+                        <td>Veg Meals</td>
+                        <td>Meals</td>
+                        <td>₹180</td>
+                        <td>Unavailable</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
